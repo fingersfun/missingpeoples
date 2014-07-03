@@ -1,0 +1,17 @@
+<?php echo $this->Form->create('Report', array('id' => 'ReportForm', 'url' => $this->here)); ?>
+	<h2>Step 1: Reporting Person details</h2>
+	<?php 
+		echo $this->Form->input('Contact.name', array('label' => 'Name:'));
+		echo $this->Form->input('Contact.surname', array('label' => 'Surame:'));
+		echo $this->Form->input('Contact.relation',array('label'=>'Relation with missing person:'));
+		echo $this->Form->input('Contact.phone', array('label' => 'Phone Number:'));
+		echo $this->Form->input('Contact.address', array('label'=>'Address:'));
+		echo $this->Form->input('Contact.city',array('label'=>'City:'));
+		echo $this->Form->input('Contact.district',array('label'=>'District:'));
+		echo $this->Form->input('Contact.state',array('label'=>'State:'));
+	?>
+	<div class="submit">
+		<?php echo $this->Form->submit('Continue', array('div' => false)); ?>
+		<?php echo $this->Form->submit('Cancel', array('name' => 'Cancel', 'div' => false)); ?>
+	</div>
+<?php echo $this->Form->end(); ?>

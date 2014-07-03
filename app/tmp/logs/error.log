@@ -1,0 +1,32 @@
+2014-07-02 04:15:28 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+Request URL: /missingpeoples/reportings/wizard
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\missingpeoples\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `mi...', Array)
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `mi...')
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Model\Model.php(1832): DboSource->create(Object(Person), Array, Array)
+#4 C:\xampp\htdocs\missingpeoples\app\Controller\ReportingsController.php(173): Model->save(Array)
+#5 C:\xampp\htdocs\missingpeoples\app\Plugin\Wizard\Controller\Component\WizardComponent.php(235): ReportingsController->_afterComplete()
+#6 C:\xampp\htdocs\missingpeoples\app\Controller\ReportingsController.php(30): WizardComponent->process(NULL)
+#7 [internal function]: ReportingsController->wizard()
+#8 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ReportingsController), Array)
+#9 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ReportingsController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-07-02 04:43:54 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'picture' cannot be null
+Request URL: /missingpeoples/reportings/wizard
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\missingpeoples\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `mi...', Array)
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `mi...')
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Model\Model.php(1832): DboSource->create(Object(Person), Array, Array)
+#4 C:\xampp\htdocs\missingpeoples\app\Controller\ReportingsController.php(176): Model->save(Array)
+#5 C:\xampp\htdocs\missingpeoples\app\Plugin\Wizard\Controller\Component\WizardComponent.php(235): ReportingsController->_afterComplete()
+#6 C:\xampp\htdocs\missingpeoples\app\Controller\ReportingsController.php(30): WizardComponent->process(NULL)
+#7 [internal function]: ReportingsController->wizard()
+#8 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ReportingsController), Array)
+#9 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ReportingsController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
