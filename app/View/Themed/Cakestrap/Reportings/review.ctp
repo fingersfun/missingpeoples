@@ -1,4 +1,4 @@
-
+<!--
 	<?php 
 		//echo '<pre>';
 		$wizardData = $this->Session->read('Wizard.Reportings');
@@ -47,9 +47,12 @@
 				echo $this->Form->input('Person.surname', array('label' => 'Surame:','value'=>$persondetails['surname'],'class' => 'form-control'));
 				echo $this->Form->input('Person.sex',array('label'=>'Sex:','value'=>$persondetails['sex'],'class' => 'form-control'));
 				echo $this->Form->input('Person.dob', array('label' => 'Date of Birth:','value'=>$persondetails['dob'],'class' => 'form-control'));
-				echo $this->Form->input('Person.picture', array('label'=>'Photo:','type'=>'file','value'=>$persondetails['picture'],'class' => 'form-control'));
+				//echo $this->Form->input('Person.picture', array('label'=>'Photo:','value'=>$persondetails['picture'],'class' => 'form-control'));
+				echo $this->Form->file('Person.picture', array('label'=>'Photo:','value'=>$persondetails['picture']['tmp_name'],'class' => 'form-control'));
+				
+				print_r($persondetails['picture']);
 			?>
-		
+		<img src="<?php echo $persondetails['picture']['name']; ?>" width="100" height="100" />
 	</p>
       </div>
       <div class="tab-pane fade" id="IdentificationDetails">
@@ -110,3 +113,4 @@
 <?php echo $this->Form->end(); ?>
 </div>
 </div>
+-->

@@ -14,7 +14,7 @@ $sexoptions = Configure::read('sexoptions');
 		echo $this->Form->input('Person.surname', array('label' => 'Surame:','class' => 'form-control'));
 		echo $this->Form->input('Person.sex',array('label'=>'Sex:','class' => 'form-control','type'=>'select','options'=>$sexoptions));
 		echo $this->Form->input('Person.dob', array('label' => 'Date of Birth:','class' => 'form-control','div'=>false));
-		echo $this->Form->input('Person.picture', array('label'=>'Photo:','class' => 'form-control','type'=>'file'));
+		echo $this->Form->input('Person.picture', array('label'=>'Photo:','class' => 'form-control','type'=>'file'));			
 	?>
 	<br />
 	<div class="submit pull-right">
@@ -25,4 +25,3 @@ $sexoptions = Configure::read('sexoptions');
 
 </div>
 
-</div>
