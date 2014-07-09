@@ -358,7 +358,7 @@ if (Configure::read('debug') > 0) {
 }
 
 // Prefix each application on the same server with a different string, to avoid Memcache and APC conflicts.
-$prefix = 'myapp_';
+$prefix = 'missimgpeoples_';
 
 /**
  * Configure the cache used for general framework caching. Path information,
@@ -385,3 +385,5 @@ Cache::config('_cake_model_', array(
 ));
 Configure::write('sexoptions',array('Male'=>'Male','Female'=>'Female'));
 Configure::write('typeoptions',array('Right'=>'Right Handed','Left'=>'Left Handed'));
+Configure::write('user_img_maximgwidth', 331);
+Configure::write('user_img_maximgheight', 323);

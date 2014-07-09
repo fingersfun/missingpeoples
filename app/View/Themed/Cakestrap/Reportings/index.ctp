@@ -3,21 +3,30 @@
 <div class="row">
 <?php 
 
-echo '<pre>';
-print_r($peoples);
-echo '</pre>';
+//echo '<pre>';
+//print_r($peoples);
+//echo '</pre>';
 	
 	foreach($peoples as $people)
 	{
+		//echo '<li>';
+		//echo $this->Html->link(
+		//	$this->Html->image($people['Person']['picture']).$this->Html->tag('h4',$people['Person']['name'].' '.$people['Person']['surname']), array('controller'=>'reportings','action'=>'viewReport',$people['Person']['id']), array('escape' => false)
+		//);		
+		//echo '</li>';
 			?>
-			<a href="">
+			
+			
+			<a href="<?php echo $this->Html->url(array('controller'=>'reportings','action'=>'viewReport',$people['Person']['id'])) ; ?>">
 						<div class="col-sm-6 col-md-3">
-							<div class="thumbnail published">
-								<img src="<?php echo '../'.$people['Person']['picture']; ?>" alt="...">
+							<div class="thumbnail published">								
+								<?php echo $this->Html->image($people['Person']['picture']); ?>
 								<div class="caption">
-									<h4><?php echo $people['Person']['name'].' '.$people['Person']['surname']; ?></h4>
-									<h5><i class="fa fa-calendar"></i> <?php echo $people['Missingdetail']['date']; ?></h5>
-									<h5><i class="fa fa-camera-retro"></i> 0</h5>
+									
+									<h3><b><i class="fa fa-user"></i>  </b><?php echo $people['Person']['name'].' '.$people['Person']['surname']; ?></h3>
+									<h4><b><i class="fa fa-calendar"></i>   </b><?php echo $people['Missingdetail']['date']; ?> </h4>
+									<h4><b><i class="fa fa-phone"></i>  </b><?php echo $people['Contact']['phone']; ?>      </h4>
+									
 								</div>
 							</div>
 						</div>
@@ -27,24 +36,16 @@ echo '</pre>';
 					<?php
 	}
 ?>
+
 </div>
 </div>
+<div align="center">
+<ul class="pagination">
+				<?php
+					echo $this->Paginator->prev('< ' . __('Previous'), array('tag' => 'li'), null, array('class' => 'disabled', 'tag' => 'li', 'disabledTag' => 'a'));
+					echo $this->Paginator->numbers(array('separator' => '', 'currentTag' => 'a', 'tag' => 'li', 'currentClass' => 'disabled'));
+					echo $this->Paginator->next(__('Next') . ' >', array('tag' => 'li'), null, array('class' => 'disabled', 'tag' => 'li', 'disabledTag' => 'a'));
+				?>
+			</ul><!-- /.pagination -->
 </div>
-		<div class="row">
-			<div class="col-md-12">
-				<div class="row">
-					<a href="">
-						<div class="col-sm-6 col-md-3">
-							<div class="thumbnail published">
-								<img src="http://placehold.it/170x255" alt="...">
-								<div class="caption">
-									<h4>Album - 736	</h4>
-									<h5><i class="fa fa-calendar"></i> June 11, 2014 13:32 PM									</h5>
-									<h5><i class="fa fa-camera-retro"></i> 0</h5>
-								</div>
-							</div>
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
+</div>

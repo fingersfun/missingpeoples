@@ -1,0 +1,193 @@
+2014-07-03 08:29:53 Debug: Array
+(
+    [Person] => Array
+        (
+            [name] => rew
+            [surname] => wert
+            [sex] => Male
+            [dob] => Array
+                (
+                    [month] => 07
+                    [day] => 03
+                    [year] => 2014
+                )
+
+            [picture] => Array
+                (
+                    [name] => 1_Hydrangeas (2).jpg
+                    [type] => image/jpeg
+                    [tmp_name] => C:\xampp\tmp\php5EB7.tmp
+                    [error] => 0
+                    [size] => 845941
+                )
+
+        )
+
+)
+
+2014-07-03 08:29:53 Debug: Array
+(
+    [name] => 1_Hydrangeas (2).jpg
+    [type] => image/jpeg
+    [tmp_name] => C:\xampp\tmp\php5EB7.tmp
+    [error] => 0
+    [size] => 845941
+)
+
+2014-07-03 08:29:53 Debug: F_MIS_Jul032014_082953
+2014-07-03 08:29:53 Debug: C:\xampp\htdocs\missingpeoples\app\webroot\images\missings
+2014-07-03 08:29:53 Debug: C:\xampp\htdocs\missingpeoples\app\webroot\images\missings\F_MIS_Jul032014_082953.jpg
+2014-07-03 10:57:12 Debug: F_MIS_Jul032014_105712
+2014-07-03 10:57:12 Debug: C:\xampp\htdocs\missingpeoples\app\webroot\images\missings
+2014-07-03 10:57:12 Debug: C:\xampp\htdocs\missingpeoples\app\webroot\images\missings\F_MIS_Jul032014_105712.jpg
+2014-07-03 10:57:12 Debug: F_MIS_Jul032014_105712.jpg
+2014-07-03 10:58:39 Debug: F_MIS_Jul032014_105839
+2014-07-03 10:58:39 Debug: C:\xampp\htdocs\missingpeoples\app\webroot\images\missings
+2014-07-03 10:58:39 Debug: C:\xampp\htdocs\missingpeoples\app\webroot\images\missings\F_MIS_Jul032014_105839.jpg
+2014-07-03 10:58:39 Debug: F_MIS_Jul032014_105839.jpg
+2014-07-03 11:02:43 Debug: Array
+(
+    [Person] => Array
+        (
+            [name] => ggg
+            [surname] => gg
+            [sex] => Male
+            [dob] => Array
+                (
+                    [month] => 07
+                    [day] => 03
+                    [year] => 2014
+                )
+
+            [picture] => Array
+                (
+                    [name] => Hydrangeas.jpg
+                    [type] => image/jpeg
+                    [tmp_name] => C:\xampp\tmp\phpB5D9.tmp
+                    [error] => 0
+                    [size] => 595284
+                )
+
+        )
+
+)
+
+2014-07-03 11:02:43 Debug: Array
+(
+    [name] => Hydrangeas.jpg
+    [type] => image/jpeg
+    [tmp_name] => C:\xampp\tmp\phpB5D9.tmp
+    [error] => 0
+    [size] => 595284
+)
+
+2014-07-03 11:02:43 Debug: F_MIS_Jul032014_110243
+2014-07-03 11:02:43 Debug: C:\xampp\htdocs\missingpeoples\app\webroot\images\missings
+2014-07-03 11:02:43 Debug: C:\xampp\htdocs\missingpeoples\app\webroot\images\missings\F_MIS_Jul032014_110243.jpg
+2014-07-03 11:24:29 Debug: Array
+(
+    [Person] => Array
+        (
+            [name] => tyres
+            [surname] => drt
+            [sex] => Male
+            [dob] => Array
+                (
+                    [month] => 07
+                    [day] => 03
+                    [year] => 2014
+                )
+
+            [picture] => Array
+                (
+                    [name] => 1_Hydrangeas.jpg
+                    [type] => image/jpeg
+                    [tmp_name] => C:\xampp\tmp\php1671.tmp
+                    [error] => 0
+                    [size] => 595284
+                )
+
+        )
+
+)
+
+2014-07-03 11:24:29 Debug: Array
+(
+    [name] => 1_Hydrangeas.jpg
+    [type] => image/jpeg
+    [tmp_name] => C:\xampp\tmp\php1671.tmp
+    [error] => 0
+    [size] => 595284
+)
+
+2014-07-03 11:24:29 Debug: F_MIS_Jul032014_112429
+2014-07-03 11:24:29 Debug: C:\xampp\htdocs\missingpeoples\app\webroot\images\missings
+2014-07-03 11:24:29 Debug: C:\xampp\htdocs\missingpeoples\app\webroot\images\missings\F_MIS_Jul032014_112429.jpg
+2014-07-08 08:36:14 Debug: F_MIS_Jul082014_083614
+2014-07-08 08:36:14 Debug: C:\xampp\htdocs\missingpeoples\app\webroot\images\missings
+2014-07-08 08:36:14 Debug: C:\xampp\htdocs\missingpeoples\app\webroot\images\missings\F_MIS_Jul082014_083614.jpg
+2014-07-08 08:36:14 Debug: F_MIS_Jul082014_083614.jpg
+2014-07-08 08:37:48 Debug: F_MIS_Jul082014_083748
+2014-07-08 08:37:48 Debug: C:\xampp\htdocs\missingpeoples\app\webroot\images\missings
+2014-07-08 08:37:48 Debug: C:\xampp\htdocs\missingpeoples\app\webroot\images\missings\F_MIS_Jul082014_083748.jpg
+2014-07-08 08:37:48 Debug: F_MIS_Jul082014_083748.jpg
+2014-07-08 08:43:08 Debug: F_MIS_Jul082014_084308
+2014-07-08 08:43:08 Debug: C:\xampp\htdocs\missingpeoples\app\webroot\images\missings
+2014-07-08 08:43:08 Debug: C:\xampp\htdocs\missingpeoples\app\webroot\images\missings\F_MIS_Jul082014_084308.jpg
+2014-07-08 08:43:08 Debug: F_MIS_Jul082014_084308.jpg
+2014-07-08 08:44:38 Debug: F_MIS_Jul082014_084438
+2014-07-08 08:44:38 Debug: C:\xampp\htdocs\missingpeoples\app\webroot\images\missings
+2014-07-08 08:44:38 Debug: C:\xampp\htdocs\missingpeoples\app\webroot\images\missings\F_MIS_Jul082014_084438.jpg
+2014-07-08 08:44:38 Debug: F_MIS_Jul082014_084438.jpg
+2014-07-08 08:48:25 Debug: F_MIS_Jul082014_084825
+2014-07-08 08:48:25 Debug: C:\xampp\htdocs\missingpeoples\app\webroot\images\missings
+2014-07-08 08:48:25 Debug: C:\xampp\htdocs\missingpeoples\app\webroot\images\missings\F_MIS_Jul082014_084825.jpg
+2014-07-08 08:48:25 Debug: F_MIS_Jul082014_084825.jpg
+2014-07-08 08:55:36 Debug: F_MIS_Jul082014_085536
+2014-07-08 08:55:36 Debug: C:\xampp\htdocs\missingpeoples\app\webroot\images\missings
+2014-07-08 08:55:36 Debug: C:\xampp\htdocs\missingpeoples\app\webroot\images\missings\F_MIS_Jul082014_085536.jpg
+2014-07-08 08:55:36 Debug: F_MIS_Jul082014_085536.jpg
+2014-07-08 08:57:30 Debug: F_MIS_Jul082014_085730
+2014-07-08 08:57:30 Debug: C:\xampp\htdocs\missingpeoples\app\webroot\images\missings
+2014-07-08 08:57:30 Debug: C:\xampp\htdocs\missingpeoples\app\webroot\images\missings\F_MIS_Jul082014_085730.jpg
+2014-07-08 08:57:30 Debug: F_MIS_Jul082014_085730.jpg
+2014-07-08 08:58:33 Debug: F_MIS_Jul082014_085833
+2014-07-08 08:58:33 Debug: C:\xampp\htdocs\missingpeoples\app\webroot\images\missings
+2014-07-08 08:58:33 Debug: C:\xampp\htdocs\missingpeoples\app\webroot\images\missings\F_MIS_Jul082014_085833.jpg
+2014-07-08 08:58:33 Debug: F_MIS_Jul082014_085833.jpg
+2014-07-08 09:00:13 Debug: F_MIS_Jul082014_090013
+2014-07-08 09:00:13 Debug: C:\xampp\htdocs\missingpeoples\app\webroot\images\missings
+2014-07-08 09:00:13 Debug: C:\xampp\htdocs\missingpeoples\app\webroot\images\missings\F_MIS_Jul082014_090013.jpg
+2014-07-08 09:00:13 Debug: F_MIS_Jul082014_090013.jpg
+2014-07-08 09:19:13 Debug: F_MIS_Jul082014_091913
+2014-07-08 09:19:13 Debug: C:\xampp\htdocs\missingpeoples\app\webroot\images\missings
+2014-07-08 09:19:13 Debug: C:\xampp\htdocs\missingpeoples\app\webroot\images\missings\F_MIS_Jul082014_091913.jpg
+2014-07-08 09:19:13 Debug: F_MIS_Jul082014_091913.jpg
+2014-07-08 09:19:27 Debug: F_MIS_Jul082014_091927
+2014-07-08 09:19:27 Debug: C:\xampp\htdocs\missingpeoples\app\webroot\images\missings
+2014-07-08 09:19:27 Debug: C:\xampp\htdocs\missingpeoples\app\webroot\images\missings\F_MIS_Jul082014_091927.jpg
+2014-07-08 09:19:27 Debug: F_MIS_Jul082014_091927.jpg
+2014-07-08 09:19:43 Debug: F_MIS_Jul082014_091943
+2014-07-08 09:19:43 Debug: C:\xampp\htdocs\missingpeoples\app\webroot\images\missings
+2014-07-08 09:19:43 Debug: C:\xampp\htdocs\missingpeoples\app\webroot\images\missings\F_MIS_Jul082014_091943.jpg
+2014-07-08 09:19:43 Debug: F_MIS_Jul082014_091943.jpg
+2014-07-08 09:22:16 Debug: F_MIS_Jul082014_092216
+2014-07-08 09:22:16 Debug: C:\xampp\htdocs\missingpeoples\app\webroot\images\missings
+2014-07-08 09:22:16 Debug: C:\xampp\htdocs\missingpeoples\app\webroot\images\missings\F_MIS_Jul082014_092216.jpg
+2014-07-08 09:22:16 Debug: F_MIS_Jul082014_092216.jpg
+2014-07-08 09:27:43 Debug: F_MIS_Jul082014_092743
+2014-07-08 09:27:43 Debug: C:\xampp\htdocs\missingpeoples\app\webroot\images\missings
+2014-07-08 09:27:43 Debug: C:\xampp\htdocs\missingpeoples\app\webroot\images\missings\F_MIS_Jul082014_092743.jpg
+2014-07-08 09:27:43 Debug: F_MIS_Jul082014_092743.jpg
+2014-07-08 09:30:53 Debug: F_MIS_Jul082014_093053
+2014-07-08 09:30:53 Debug: C:\xampp\htdocs\missingpeoples\app\webroot\images\missings
+2014-07-08 09:30:53 Debug: C:\xampp\htdocs\missingpeoples\app\webroot\images\missings\F_MIS_Jul082014_093053.jpg
+2014-07-08 09:30:53 Debug: F_MIS_Jul082014_093053.jpg
+2014-07-08 10:44:17 Debug: F_MIS_Jul082014_104417
+2014-07-08 10:44:17 Debug: C:\xampp\htdocs\missingpeoples\app\webroot\images\missings
+2014-07-08 10:44:17 Debug: C:\xampp\htdocs\missingpeoples\app\webroot\images\missings\F_MIS_Jul082014_104417.png
+2014-07-08 10:44:17 Debug: F_MIS_Jul082014_104417.png
+2014-07-08 10:45:58 Debug: F_MIS_Jul082014_104558
+2014-07-08 10:45:58 Debug: C:\xampp\htdocs\missingpeoples\app\webroot\images\missings
+2014-07-08 10:45:58 Debug: C:\xampp\htdocs\missingpeoples\app\webroot\images\missings\F_MIS_Jul082014_104558.png
+2014-07-08 10:45:58 Debug: F_MIS_Jul082014_104558.png

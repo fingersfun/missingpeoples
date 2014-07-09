@@ -15,13 +15,11 @@ class ReportingsController extends AppController {
  */
 	public $scaffold;
 	public $uses = array('Person','Contact','Identification','Missingdetail');
-	var $components = array('Wizard.Wizard','Session');
+	var $components = array('Wizard.Wizard','Session','Paginator');
 	
 	public function beforeFilter() 
 	{
         $this->Wizard->steps = array('person', 'identification', 'missingdetail','contact');
-		//$this->Wizard->wizardAction = '/reportings/wizard/uploadstyle';
-		//$this->Wizard->completeUrl = '/reportings/confirm'; 
 		
 		$wizardData = $this->Wizard->read();
 		$this->set(compact('reviewData',$wizardData));
@@ -32,14 +30,12 @@ class ReportingsController extends AppController {
         $this->Wizard->process($step);
     }
 	
-	/**
+/**
  * [Wizard Process Callbacks]
  */
     public function _processContact() 
 	{
         $this->Contact->set($this->data);
-       // $this->User->set($this->data);
-
         if($this->Contact->validates()) 
 		{
             return true;
@@ -79,22 +75,20 @@ class ReportingsController extends AppController {
 			$date = date('MdY_His');		
 				
 			$fileName = 'F_MIS_'. $date;
-			$this->log($fileName, 'debug');
 			$filefullname = $fileName .'.'. $ext;
-			$foldername = WWW_ROOT .'images'. DS .'missings' ;
-			$this->log($foldername, 'debug');
+			$foldername = WWW_ROOT .'img'. DS .'missings' ;
 			$folder = new Folder();
 			$folder->create($foldername) ;
 			$filedestination = $foldername . DS. $filefullname;
-			$this->log($filedestination, 'debug');
+			$maximgwidth = Configure::read('user_img_maximgwidth');
+			$maximgheight = Configure::read('user_img_maximgheight');
 			if(move_uploaded_file($attchmentdata['tmp_name'], $filedestination))
 			{	
-				$attchment_url = 'images/missings/'.$filefullname;
+				$this->ImageResizer->imageSettings($maximgwidth,$maximgheight,$filedestination);
+				$attchment_url = 'missings/'.$filefullname;
 				$persondata['Person']['picture'] = $attchment_url;
-				$this->log($filefullname, 'debug');
 			}else
 			{
-				//$this->data['Person']['picture'] = 'images/missings/default.png';
 				return false;
 			}	
 		}
@@ -110,43 +104,15 @@ class ReportingsController extends AppController {
     }
 	
 	public function _processReview() 
-	{
-		//$wizardData = $this->Wizard->read();
-		//$wizardData = $this->Session->read();
-		//$this->set(compact('wizardData',$wizardData));
-		//echo '<pre>';
-		//print_r($this->$wizardData);
-		//echo '</pre>';
-		
+	{		
 		return true;
 	}
-	
-	/*
-	public function review() 
-	{
-		$wizardData = $this->Session->read();
-		$this->set(compact('wizardData',$wizardData));
-		echo '<pre>';
-		//print_r($this->$wizardData);
-		
-		//print_r($this->wizard->read());
-		$email = $this->Wizard->read('person.Person.dob');
-		print_r($email);
-		print_r($this->Session->read());
-		echo '</pre>';
-		
-		return true;
-	}
-	*/
+
 	function confirm() 
 	{
 		
 	}
-	/*
-	public function review() {
-		return true;
-	}
-	*/
+
 /** 
  * [Wizard Completion Callback] 
  */ 
@@ -175,41 +141,7 @@ class ReportingsController extends AppController {
 		{
 			$missingid = $this->Missingdetail->id;
 		}
-		/*
-		$this->log($persondetails, 'debug');
 		
-		$attchmentdata = $persondetails['Person']['picture'];
-		
-		$this->log($attchmentdata, 'debug');
-		if(isset($attchmentdata) || is_uploaded_file($attchmentdata['tmp_name'])){
-			list($fileName,$ext) = explode('.', $attchmentdata['name']);	
-			
-			$date = date('MdY_His');		
-				
-			$fileName = 'F_MIS_'. $date;
-			$this->log($fileName, 'debug');
-			$filefullname = $fileName .'.'. $ext;
-			$foldername = WWW_ROOT .'images'. DS .'missings' ;
-			$this->log($foldername, 'debug');
-			$folder = new Folder();
-			$folder->create($foldername) ;
-			$filedestination = $foldername . DS. $filefullname;
-			$this->log($filedestination, 'debug');
-			if(move_uploaded_file($attchmentdata['tmp_name'], $filedestination))
-			{	
-				$attchment_url = 'images/missings/'.$filefullname;
-				$persondetails['Person']['picture'] = $attchment_url;
-				$this->log($filefullname, 'debug');
-			}else
-			{
-				$persondetails['Person']['picture'] = 'images/missings/default.png';
-			}						
-			
-		}else
-		{
-			$persondetails['Person']['picture'] = 'images/missings/default.png';
-		}
-		*/
 		$tday = date('Y-m-d H:i:s');
 		$persondetails['Person']['identification_id'] = $identifyid;
 		$persondetails['Person']['contact_id'] = $contactid;
@@ -222,8 +154,20 @@ class ReportingsController extends AppController {
 	
 	public function index() 
 	{
+		$this->Person->recursive = 1;	
+		$this->Paginator->settings = array(
+			'conditions' => array('Person.status' => false),
+			'limit' => 5,
+			'order' => array('Person.id'=>'DESC')
+		);
+		$peoples = $this->Paginator->paginate('Person');
+		$this->set(compact('peoples',$peoples));
+		
+	}
+	public function viewReport($id) 
+	{
 		$this->Person->recursive = 1;
-		$this->set('peoples', $this->paginate());
+		$this->set('report', $this->Person->findById($id));
 	}
 	public function add() {
 		if ($this->request->is('post')) {
@@ -236,27 +180,29 @@ class ReportingsController extends AppController {
 				$date = date('MdY_His');		
 					
 				$fileName = 'F_MIS_'. $date;
-				$this->log($fileName, 'debug');
+				//$this->log($fileName, 'debug');
 				$filefullname = $fileName .'.'. $ext;
-				$foldername = WWW_ROOT .'images'. DS .'missings' ;
-				$this->log($foldername, 'debug');
+				$foldername = WWW_ROOT .'img'. DS .'missings' ;
+				//$this->log($foldername, 'debug');
 				$folder = new Folder();
 				$folder->create($foldername) ;
 				$filedestination = $foldername . DS. $filefullname;
-				$this->log($filedestination, 'debug');
+				//$this->log($filedestination, 'debug');
+				$maximgwidth = Configure::read('user_img_maximgwidth');
+				$maximgheight = Configure::read('user_img_maximgheight');
 				if(move_uploaded_file($attchmentdata['tmp_name'], $filedestination))
 				{	
-					$attchment_url = 'images/missings/'.$filefullname;
+					$attchment_url = 'missings/'.$filefullname;
 					$persondetails['Person']['picture'] = $attchment_url;
-					$this->log($filefullname, 'debug');
+					//$this->log($filefullname, 'debug');
 				}else
 				{
-					$persondetails['Person']['picture'] = 'images/missings/default.png';
+					$persondetails['Person']['picture'] = 'missings/default.png';
 				}						
 				
 			}else
 			{
-				$persondetails['Person']['picture'] = 'images/missings/default.png';
+				$persondetails['Person']['picture'] = 'missings/default.png';
 			}
 			$tday = date('Y-m-d H:i:s');
 			$persondetails['Person']['created'] = $tday;

@@ -9,6 +9,7 @@ $sexoptions = Configure::read('sexoptions');
 	
 	<h4><span class="label label-default">Step 1</span> Missing Person details</h4>
 	<hr>
+	
 	<?php 
 		echo $this->Form->input('Person.name', array('label' => 'Name:','class' => 'form-control'));
 		echo $this->Form->input('Person.surname', array('label' => 'Surame:','class' => 'form-control'));

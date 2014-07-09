@@ -1,32 +1,804 @@
-2014-07-02 04:15:28 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
-Request URL: /missingpeoples/reportings/wizard
+2014-07-03 09:23:33 Error: [MissingControllerException] Controller class ReporingsController could not be found.
+Exception Attributes: array (
+  'class' => 'ReporingsController',
+  'plugin' => NULL,
+)
+Request URL: /missingpeoples/reporings/
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-03 09:59:15 Error: Fatal Error (4): syntax error, unexpected 'Person' (T_STRING), expecting ',' or ';' in [C:\xampp\htdocs\missingpeoples\app\View\Themed\Cakestrap\Reportings\index.ctp, line 12]
+2014-07-03 09:59:15 Error: [FatalErrorException] syntax error, unexpected 'Person' (T_STRING), expecting ',' or ';'
+Request URL: /missingpeoples/reportings/
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 12, Array)
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 12, Array)
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-03 10:02:29 Error: Fatal Error (4): syntax error, unexpected ''." data-title="'' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in [C:\xampp\htdocs\missingpeoples\app\View\Themed\Cakestrap\Reportings\index.ctp, line 12]
+2014-07-03 10:02:29 Error: [FatalErrorException] syntax error, unexpected ''." data-title="'' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';'
+Request URL: /missingpeoples/reportings/
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 12, Array)
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 12, Array)
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-03 10:04:31 Error: [MissingActionException] Action Reportings::images() could not be found.
+Exception Attributes: array (
+  'controller' => 'Reportings',
+  'action' => 'images',
+)
+Request URL: /missingpeoples/reportings/images/missings/default.png
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(ReportingsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ReportingsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-07-03 10:04:32 Error: [MissingActionException] Action Reportings::missings() could not be found.
+Exception Attributes: array (
+  'controller' => 'Reportings',
+  'action' => 'missings',
+)
+Request URL: /missingpeoples/reportings/missings/default.png
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(ReportingsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ReportingsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-07-03 10:07:38 Error: Fatal Error (4): syntax error, unexpected 'Person' (T_STRING), expecting ',' or ';' in [C:\xampp\htdocs\missingpeoples\app\View\Themed\Cakestrap\Reportings\index.ctp, line 12]
+2014-07-03 10:07:38 Error: [FatalErrorException] syntax error, unexpected 'Person' (T_STRING), expecting ',' or ';'
+Request URL: /missingpeoples/reportings/
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 12, Array)
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 12, Array)
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-03 10:56:41 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+Request URL: /missingpeoples/reportings/add
 Stack Trace:
 #0 C:\xampp\htdocs\missingpeoples\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
 #1 C:\xampp\htdocs\missingpeoples\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `mi...', Array)
 #2 C:\xampp\htdocs\missingpeoples\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `mi...')
 #3 C:\xampp\htdocs\missingpeoples\lib\Cake\Model\Model.php(1832): DboSource->create(Object(Person), Array, Array)
-#4 C:\xampp\htdocs\missingpeoples\app\Controller\ReportingsController.php(173): Model->save(Array)
-#5 C:\xampp\htdocs\missingpeoples\app\Plugin\Wizard\Controller\Component\WizardComponent.php(235): ReportingsController->_afterComplete()
-#6 C:\xampp\htdocs\missingpeoples\app\Controller\ReportingsController.php(30): WizardComponent->process(NULL)
-#7 [internal function]: ReportingsController->wizard()
-#8 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ReportingsController), Array)
-#9 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
-#10 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ReportingsController), Object(CakeRequest), Object(CakeResponse))
-#11 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#12 {main}
-2014-07-02 04:43:54 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'picture' cannot be null
-Request URL: /missingpeoples/reportings/wizard
+#4 C:\xampp\htdocs\missingpeoples\app\Controller\ReportingsController.php(233): Model->save(Array)
+#5 [internal function]: ReportingsController->add()
+#6 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ReportingsController), Array)
+#7 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ReportingsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-07-03 10:57:13 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+Request URL: /missingpeoples/reportings/add
 Stack Trace:
 #0 C:\xampp\htdocs\missingpeoples\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
 #1 C:\xampp\htdocs\missingpeoples\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `mi...', Array)
 #2 C:\xampp\htdocs\missingpeoples\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `mi...')
 #3 C:\xampp\htdocs\missingpeoples\lib\Cake\Model\Model.php(1832): DboSource->create(Object(Person), Array, Array)
-#4 C:\xampp\htdocs\missingpeoples\app\Controller\ReportingsController.php(176): Model->save(Array)
-#5 C:\xampp\htdocs\missingpeoples\app\Plugin\Wizard\Controller\Component\WizardComponent.php(235): ReportingsController->_afterComplete()
-#6 C:\xampp\htdocs\missingpeoples\app\Controller\ReportingsController.php(30): WizardComponent->process(NULL)
-#7 [internal function]: ReportingsController->wizard()
-#8 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ReportingsController), Array)
-#9 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
-#10 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ReportingsController), Object(CakeRequest), Object(CakeResponse))
-#11 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
-#12 {main}
+#4 C:\xampp\htdocs\missingpeoples\app\Controller\ReportingsController.php(233): Model->save(Array)
+#5 [internal function]: ReportingsController->add()
+#6 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ReportingsController), Array)
+#7 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ReportingsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-07-03 10:58:41 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`missingpeoplesdb`.`persons`, CONSTRAINT `persons_ibfk_1` FOREIGN KEY (`identification_id`) REFERENCES `identifications` (`id`))
+Request URL: /missingpeoples/reportings/add
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\missingpeoples\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `mi...', Array)
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Model\Datasource\DboSource.php(1004): DboSource->execute('INSERT INTO `mi...')
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Model\Model.php(1832): DboSource->create(Object(Person), Array, Array)
+#4 C:\xampp\htdocs\missingpeoples\app\Controller\ReportingsController.php(233): Model->save(Array)
+#5 [internal function]: ReportingsController->add()
+#6 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ReportingsController), Array)
+#7 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ReportingsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-07-08 08:35:14 Error: Fatal Error (4): syntax error, unexpected 'if' (T_IF) in [C:\xampp\htdocs\missingpeoples\app\Controller\ReportingsController.php, line 79]
+2014-07-08 08:35:14 Error: [FatalErrorException] syntax error, unexpected 'if' (T_IF)
+Request URL: /missingpeoples/reportings/
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 79)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 79, Array)
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 79, Array)
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-08 11:28:30 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\xampp\htdocs\missingpeoples\app\View\Themed\Cakestrap\Reportings\index.ctp, line 13]
+2014-07-08 11:28:30 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /missingpeoples/reportings/
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-08 11:30:58 Error: [MissingActionException] Action Reportings::C:() could not be found.
+Exception Attributes: array (
+  'controller' => 'Reportings',
+  'action' => 'C:',
+)
+Request URL: /missingpeoples/reportings/C:/xampp/htdocs/missingpeoples/app/webroot/images/missings/F_MIS_Jul082014_104558.png
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(ReportingsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ReportingsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-07-08 11:31:41 Error: [MissingActionException] Action Reportings::images() could not be found.
+Exception Attributes: array (
+  'controller' => 'Reportings',
+  'action' => 'images',
+)
+Request URL: /missingpeoples/reportings/images/missings/default.png
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(ReportingsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ReportingsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-07-08 11:31:43 Error: [MissingActionException] Action Reportings::images() could not be found.
+Exception Attributes: array (
+  'controller' => 'Reportings',
+  'action' => 'images',
+)
+Request URL: /missingpeoples/reportings/images/images/missings/default.png
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(ReportingsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ReportingsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-07-08 11:31:44 Error: [MissingActionException] Action Reportings::images() could not be found.
+Exception Attributes: array (
+  'controller' => 'Reportings',
+  'action' => 'images',
+)
+Request URL: /missingpeoples/reportings/images/images/missings/F_MIS_Jul082014_104558.png
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(ReportingsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ReportingsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-07-08 11:31:50 Error: [MissingActionException] Action Reportings::images() could not be found.
+Exception Attributes: array (
+  'controller' => 'Reportings',
+  'action' => 'images',
+)
+Request URL: /missingpeoples/reportings/images/missings/default.png
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(ReportingsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ReportingsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-07-08 11:31:51 Error: [MissingActionException] Action Reportings::images() could not be found.
+Exception Attributes: array (
+  'controller' => 'Reportings',
+  'action' => 'images',
+)
+Request URL: /missingpeoples/reportings/images/images/missings/F_MIS_Jul082014_104558.png
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(ReportingsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ReportingsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-07-08 11:31:53 Error: [MissingActionException] Action Reportings::images() could not be found.
+Exception Attributes: array (
+  'controller' => 'Reportings',
+  'action' => 'images',
+)
+Request URL: /missingpeoples/reportings/images/images/missings/default.png
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(ReportingsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ReportingsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-07-08 11:32:19 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /missingpeoples/images/images/missings/F_MIS_Jul082014_104558.png
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-08 11:35:07 Error: [MissingActionException] Action Reportings::images() could not be found.
+Exception Attributes: array (
+  'controller' => 'Reportings',
+  'action' => 'images',
+)
+Request URL: /missingpeoples/reportings/images/images/missings/default.png
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(ReportingsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ReportingsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-07-08 11:35:08 Error: [MissingActionException] Action Reportings::images() could not be found.
+Exception Attributes: array (
+  'controller' => 'Reportings',
+  'action' => 'images',
+)
+Request URL: /missingpeoples/reportings/images/images/missings/F_MIS_Jul082014_104558.png
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(ReportingsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ReportingsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-07-08 11:35:09 Error: [MissingActionException] Action Reportings::images() could not be found.
+Exception Attributes: array (
+  'controller' => 'Reportings',
+  'action' => 'images',
+)
+Request URL: /missingpeoples/reportings/images/missings/default.png
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(ReportingsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ReportingsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-07-08 11:37:49 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /missingpeoples/images/images/missings/F_MIS_Jul082014_104558.png
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-08 11:37:49 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /missingpeoples/images/images/missings/default.png
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-08 11:37:51 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /missingpeoples/images/images/missings/default.png
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-08 11:37:52 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /missingpeoples/images/images/missings/F_MIS_Jul082014_104558.png
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-09 08:19:38 Error: [MissingActionException] Action Reportings::reportings() could not be found.
+Exception Attributes: array (
+  'controller' => 'Reportings',
+  'action' => 'reportings',
+)
+Request URL: /missingpeoples/reportings/reportings/5
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(ReportingsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ReportingsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-07-09 08:58:34 Error: Fatal Error (1): Call to a member function paginate() on a non-object in [C:\xampp\htdocs\missingpeoples\app\Controller\ReportingsController.php, line 235]
+2014-07-09 08:58:34 Error: [FatalErrorException] Call to a member function paginate() on a non-object
+Request URL: /missingpeoples/reportings/
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 235)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 235, Array)
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 235, Array)
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-09 08:59:22 Error: Fatal Error (1): Call to a member function paginate() on a non-object in [C:\xampp\htdocs\missingpeoples\app\Controller\ReportingsController.php, line 235]
+2014-07-09 08:59:22 Error: [FatalErrorException] Call to a member function paginate() on a non-object
+Request URL: /missingpeoples/reportings/
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 235)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 235, Array)
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 235, Array)
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-09 09:02:39 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order = ('DESC')    LIMIT 20' at line 1
+Request URL: /missingpeoples/reportings/
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\missingpeoples\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Person`...', Array)
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `Person`...', Array, Array)
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Person`...', false)
+#4 C:\xampp\htdocs\missingpeoples\lib\Cake\Model\Model.php(2902): DboSource->read(Object(Person), Array)
+#5 C:\xampp\htdocs\missingpeoples\lib\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#6 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#7 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(1079): PaginatorComponent->paginate(Array, Array, Array)
+#8 C:\xampp\htdocs\missingpeoples\app\Controller\ReportingsController.php(233): Controller->paginate(Array)
+#9 [internal function]: ReportingsController->index()
+#10 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ReportingsController), Array)
+#11 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#12 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ReportingsController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-07-09 09:04:13 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'conditions' in 'where clause'
+Request URL: /missingpeoples/reportings/
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\missingpeoples\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Person`...', Array)
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `Person`...', Array, Array)
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Person`...', false)
+#4 C:\xampp\htdocs\missingpeoples\lib\Cake\Model\Model.php(2902): DboSource->read(Object(Person), Array)
+#5 C:\xampp\htdocs\missingpeoples\lib\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#6 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#7 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(1079): PaginatorComponent->paginate(Array, Array, Array)
+#8 C:\xampp\htdocs\missingpeoples\app\Controller\ReportingsController.php(233): Controller->paginate(Array)
+#9 [internal function]: ReportingsController->index()
+#10 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ReportingsController), Array)
+#11 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#12 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ReportingsController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-07-09 09:04:51 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'limit' in 'where clause'
+Request URL: /missingpeoples/reportings/
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\missingpeoples\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Person`...', Array)
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `Person`...', Array, Array)
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Person`...', false)
+#4 C:\xampp\htdocs\missingpeoples\lib\Cake\Model\Model.php(2902): DboSource->read(Object(Person), Array)
+#5 C:\xampp\htdocs\missingpeoples\lib\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#6 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#7 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(1079): PaginatorComponent->paginate(Array, Array, Array)
+#8 C:\xampp\htdocs\missingpeoples\app\Controller\ReportingsController.php(233): Controller->paginate(Array)
+#9 [internal function]: ReportingsController->index()
+#10 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ReportingsController), Array)
+#11 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#12 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ReportingsController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-07-09 09:09:51 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'limit' in 'where clause'
+Request URL: /missingpeoples/reportings/
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\missingpeoples\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Person`...', Array)
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `Person`...', Array, Array)
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Person`...', false)
+#4 C:\xampp\htdocs\missingpeoples\lib\Cake\Model\Model.php(2902): DboSource->read(Object(Person), Array)
+#5 C:\xampp\htdocs\missingpeoples\lib\Cake\Model\Model.php(2874): Model->_readDataSource('all', Array)
+#6 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#7 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(1079): PaginatorComponent->paginate(Array, Array, Array)
+#8 C:\xampp\htdocs\missingpeoples\app\Controller\ReportingsController.php(234): Controller->paginate(Array)
+#9 [internal function]: ReportingsController->index()
+#10 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ReportingsController), Array)
+#11 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#12 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ReportingsController), Object(CakeRequest), Object(CakeResponse))
+#13 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-07-09 09:11:09 Error: Fatal Error (1): Call to a member function paginate() on a non-object in [C:\xampp\htdocs\missingpeoples\app\Controller\ReportingsController.php, line 236]
+2014-07-09 09:11:09 Error: [FatalErrorException] Call to a member function paginate() on a non-object
+Request URL: /missingpeoples/reportings/
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 236)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\xampp\htdocs...', 236, Array)
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\xampp\htdocs...', 236, Array)
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-09 10:58:38 Error: [MissingActionException] Action Reportings::images() could not be found.
+Exception Attributes: array (
+  'controller' => 'Reportings',
+  'action' => 'images',
+)
+Request URL: /missingpeoples/reportings/images/missings/default.png
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(ReportingsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ReportingsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-07-09 10:58:48 Error: [MissingActionException] Action Reportings::images() could not be found.
+Exception Attributes: array (
+  'controller' => 'Reportings',
+  'action' => 'images',
+)
+Request URL: /missingpeoples/reportings/images/missings/default.png
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(ReportingsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ReportingsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-07-09 10:59:34 Error: [MissingActionException] Action Reportings::images() could not be found.
+Exception Attributes: array (
+  'controller' => 'Reportings',
+  'action' => 'images',
+)
+Request URL: /missingpeoples/reportings/images/missings/default.png
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(ReportingsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ReportingsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-07-09 11:00:43 Error: [MissingActionException] Action Reportings::images() could not be found.
+Exception Attributes: array (
+  'controller' => 'Reportings',
+  'action' => 'images',
+)
+Request URL: /missingpeoples/reportings/images/missings/default.png
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(ReportingsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ReportingsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-07-09 11:01:03 Error: [MissingActionException] Action Reportings::images() could not be found.
+Exception Attributes: array (
+  'controller' => 'Reportings',
+  'action' => 'images',
+)
+Request URL: /missingpeoples/reportings/images/missings/default.png
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(ReportingsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ReportingsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-07-09 11:01:40 Error: Fatal Error (4): syntax error, unexpected '<', expecting ')' in [C:\xampp\htdocs\missingpeoples\app\View\Themed\Cakestrap\Reportings\index.ctp, line 37]
+2014-07-09 11:01:40 Error: [FatalErrorException] syntax error, unexpected '<', expecting ')'
+Request URL: /missingpeoples/reportings/index/page:4
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 37)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 37, Array)
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 37, Array)
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-09 11:01:55 Error: [MissingActionException] Action Reportings::images() could not be found.
+Exception Attributes: array (
+  'controller' => 'Reportings',
+  'action' => 'images',
+)
+Request URL: /missingpeoples/reportings/images/missings/default.png
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(ReportingsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ReportingsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-07-09 11:05:49 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\xampp\htdocs\missingpeoples\app\View\Themed\Cakestrap\Reportings\index.ctp, line 18]
+2014-07-09 11:05:49 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /missingpeoples/reportings/index/page:4
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 18)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 18, Array)
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 18, Array)
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-09 11:06:08 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /missingpeoples/img/images/missings/default.png
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-09 11:06:09 Error: [MissingActionException] Action Reportings::images() could not be found.
+Exception Attributes: array (
+  'controller' => 'Reportings',
+  'action' => 'images',
+)
+Request URL: /missingpeoples/reportings/images/missings/default.png
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(ReportingsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ReportingsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-07-09 11:06:19 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /missingpeoples/img/images/missings/default.png
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-09 11:06:19 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /missingpeoples/img/images/missings/F_MIS_Jul082014_104558.png
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-09 11:07:57 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /missingpeoples/img/missings/F_MIS_Jul082014_104558.png
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-09 11:07:58 Error: [MissingActionException] Action Missings::F_MIS_Jul082014_104558.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'Missings',
+  'action' => 'F_MIS_Jul082014_104558.png',
+)
+Request URL: /missingpeoples/missings/F_MIS_Jul082014_104558.png
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(MissingsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(MissingsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-07-09 11:07:58 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /missingpeoples/img/images/missings/default.png
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-09 11:08:34 Error: [MissingActionException] Action Reportings::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'Reportings',
+  'action' => 'img',
+)
+Request URL: /missingpeoples/reportings/img/missings/F_MIS_Jul082014_104558.png
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(ReportingsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ReportingsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-07-09 11:09:27 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /missingpeoples/img/images/missings/default.png
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-09 11:09:28 Error: [MissingActionException] Action Missings::F_MIS_Jul082014_104558.png() could not be found.
+Exception Attributes: array (
+  'controller' => 'Missings',
+  'action' => 'F_MIS_Jul082014_104558.png',
+)
+Request URL: /missingpeoples/missings/F_MIS_Jul082014_104558.png
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(MissingsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(MissingsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-07-09 11:17:12 Error: [MissingControllerException] Controller class ViewReportController could not be found.
+Exception Attributes: array (
+  'class' => 'ViewReportController',
+  'plugin' => NULL,
+)
+Request URL: /missingpeoples/viewReport/16
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-09 11:22:41 Error: [MissingControllerException] Controller class ViewReportController could not be found.
+Exception Attributes: array (
+  'class' => 'ViewReportController',
+  'plugin' => NULL,
+)
+Request URL: /missingpeoples/viewReport/16
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-07-09 11:22:45 Error: Fatal Error (4): syntax error, unexpected '.' in [C:\xampp\htdocs\missingpeoples\app\View\Themed\Cakestrap\Reportings\index.ctp, line 15]
+2014-07-09 11:22:45 Error: [FatalErrorException] syntax error, unexpected '.'
+Request URL: /missingpeoples/reportings
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 15, Array)
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 15, Array)
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-09 11:23:08 Error: Fatal Error (4): syntax error, unexpected 'Person' (T_STRING) in [C:\xampp\htdocs\missingpeoples\app\View\Themed\Cakestrap\Reportings\index.ctp, line 15]
+2014-07-09 11:23:08 Error: [FatalErrorException] syntax error, unexpected 'Person' (T_STRING)
+Request URL: /missingpeoples/reportings
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 15, Array)
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 15, Array)
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-09 11:23:32 Error: Fatal Error (4): syntax error, unexpected 'Person' (T_STRING) in [C:\xampp\htdocs\missingpeoples\app\View\Themed\Cakestrap\Reportings\index.ctp, line 18]
+2014-07-09 11:23:32 Error: [FatalErrorException] syntax error, unexpected 'Person' (T_STRING)
+Request URL: /missingpeoples/reportings
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 18)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 18, Array)
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 18, Array)
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-09 11:24:58 Error: Fatal Error (4): syntax error, unexpected 'col' (T_STRING) in [C:\xampp\htdocs\missingpeoples\app\View\Themed\Cakestrap\Reportings\index.ctp, line 12]
+2014-07-09 11:24:58 Error: [FatalErrorException] syntax error, unexpected 'col' (T_STRING)
+Request URL: /missingpeoples/reportings
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 12, Array)
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 12, Array)
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-09 11:26:19 Error: Fatal Error (4): syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in [C:\xampp\htdocs\missingpeoples\app\View\Themed\Cakestrap\Reportings\index.ctp, line 14]
+2014-07-09 11:26:19 Error: [FatalErrorException] syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)
+Request URL: /missingpeoples/reportings
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-09 11:26:54 Error: Fatal Error (4): syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in [C:\xampp\htdocs\missingpeoples\app\View\Themed\Cakestrap\Reportings\index.ctp, line 14]
+2014-07-09 11:26:54 Error: [FatalErrorException] syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)
+Request URL: /missingpeoples/reportings
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 14, Array)
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-09 11:36:02 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [C:\xampp\htdocs\missingpeoples\app\View\Themed\Cakestrap\Reportings\index.ctp, line 13]
+2014-07-09 11:36:02 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /missingpeoples/reportings/index/
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 13, Array)
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-09 11:49:38 Error: [MissingActionException] Action Reportings::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'Reportings',
+  'action' => 'img',
+)
+Request URL: /missingpeoples/reportings/img/1.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(ReportingsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ReportingsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-07-09 11:57:08 Error: [MissingActionException] Action Reportings::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'Reportings',
+  'action' => 'img',
+)
+Request URL: /missingpeoples/reportings/img/1.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(ReportingsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ReportingsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-07-09 12:00:01 Error: [MissingActionException] Action Reportings::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'Reportings',
+  'action' => 'img',
+)
+Request URL: /missingpeoples/reportings/img/1.jpg
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Scaffold.php(151): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(ReportingsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 C:\xampp\htdocs\missingpeoples\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ReportingsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\xampp\htdocs\missingpeoples\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-07-09 12:30:07 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\xampp\htdocs\missingpeoples\app\View\Themed\Cakestrap\Reportings\view_report.ctp, line 5]
+2014-07-09 12:30:07 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /missingpeoples/reportings/viewReport/16
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 5, Array)
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 5, Array)
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-09 12:55:23 Error: Fatal Error (4): syntax error, unexpected 'class' (T_CLASS), expecting ')' in [C:\xampp\htdocs\missingpeoples\app\View\Themed\Cakestrap\Reportings\view_report.ctp, line 21]
+2014-07-09 12:55:23 Error: [FatalErrorException] syntax error, unexpected 'class' (T_CLASS), expecting ')'
+Request URL: /missingpeoples/reportings/viewReport/16
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 21, Array)
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 21, Array)
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-07-09 12:55:59 Error: Fatal Error (4): syntax error, unexpected 'class' (T_CLASS), expecting ')' in [C:\xampp\htdocs\missingpeoples\app\View\Themed\Cakestrap\Reportings\view_report.ctp, line 21]
+2014-07-09 12:55:59 Error: [FatalErrorException] syntax error, unexpected 'class' (T_CLASS), expecting ')'
+Request URL: /missingpeoples/reportings/viewReport/16
+Stack Trace:
+#0 C:\xampp\htdocs\missingpeoples\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\xampp\htdocs...', 21, Array)
+#2 C:\xampp\htdocs\missingpeoples\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\xampp\htdocs...', 21, Array)
+#3 C:\xampp\htdocs\missingpeoples\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
