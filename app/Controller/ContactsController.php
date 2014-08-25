@@ -16,23 +16,23 @@ class ContactsController extends AppController {
 	public $components = array('Paginator');
 
 /**
- * index method
+ * admin_index method
  *
  * @return void
  */
-	public function index() {
+	public function admin_index() {
 		$this->Contact->recursive = 0;
 		$this->set('contacts', $this->paginate());
 	}
 
 /**
- * view method
+ * admin_view method
  *
  * @throws NotFoundException
  * @param string $id
  * @return void
  */
-	public function view($id = null) {
+	public function admin_view($id = null) {
 		if (!$this->Contact->exists($id)) {
 			throw new NotFoundException(__('Invalid contact'));
 		}
@@ -41,11 +41,11 @@ class ContactsController extends AppController {
 	}
 
 /**
- * add method
+ * admin_add method
  *
  * @return void
  */
-	public function add() {
+	public function admin_add() {
 		if ($this->request->is('post')) {
 			$this->Contact->create();
 			if ($this->Contact->save($this->request->data)) {
@@ -58,13 +58,13 @@ class ContactsController extends AppController {
 	}
 
 /**
- * edit method
+ * admin_edit method
  *
  * @throws NotFoundException
  * @param string $id
  * @return void
  */
-	public function edit($id = null) {
+	public function admin_edit($id = null) {
         $this->Contact->id = $id;
 		if (!$this->Contact->exists($id)) {
 			throw new NotFoundException(__('Invalid contact'));
@@ -83,14 +83,14 @@ class ContactsController extends AppController {
 	}
 
 /**
- * delete method
+ * admin_delete method
  *
  * @throws NotFoundException
  * @throws MethodNotAllowedException
  * @param string $id
  * @return void
  */
-	public function delete($id = null) {
+	public function admin_delete($id = null) {
 		if (!$this->request->is('post')) {
 			throw new MethodNotAllowedException();
 		}
@@ -104,4 +104,5 @@ class ContactsController extends AppController {
 		}
 		$this->Session->setFlash(__('Contact was not deleted'), 'flash/error');
 		$this->redirect(array('action' => 'index'));
-	}}
+	}
+}

@@ -15,7 +15,8 @@ class MissingdetailTest extends CakeTestCase {
 	public $fixtures = array(
 		'app.missingdetail',
 		'app.person',
-		'app.identification'
+		'app.identification',
+		'app.contact'
 	);
 
 /**

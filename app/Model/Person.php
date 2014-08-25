@@ -145,4 +145,8 @@ class Person extends AppModel {
 	        return true; //this is required, otherwise validation will always fail
 	    }
 	}
+	public function isOwnedBy($post, $user) 
+	{
+		return $this->field('id', array('id' => $post, 'user_id' => $user)) !== false;
+	}
 }

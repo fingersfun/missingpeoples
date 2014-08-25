@@ -15,6 +15,7 @@ class PersonTest extends CakeTestCase {
 	public $fixtures = array(
 		'app.person',
 		'app.identification',
+		'app.contact',
 		'app.missingdetail'
 	);
 
@@ -37,6 +38,15 @@ class PersonTest extends CakeTestCase {
 		unset($this->Person);
 
 		parent::tearDown();
+	}
+
+/**
+ * testIsOwnedBy method
+ *
+ * @return void
+ */
+	public function testIsOwnedBy() {
+		$this->markTestIncomplete('testIsOwnedBy not implemented.');
 	}
 
 }

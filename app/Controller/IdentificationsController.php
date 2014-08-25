@@ -16,23 +16,23 @@ class IdentificationsController extends AppController {
 	public $components = array('Paginator');
 
 /**
- * index method
+ * admin_index method
  *
  * @return void
  */
-	public function index() {
+	public function admin_index() {
 		$this->Identification->recursive = 0;
 		$this->set('identifications', $this->paginate());
 	}
 
 /**
- * view method
+ * admin_view method
  *
  * @throws NotFoundException
  * @param string $id
  * @return void
  */
-	public function view($id = null) {
+	public function admin_view($id = null) {
 		if (!$this->Identification->exists($id)) {
 			throw new NotFoundException(__('Invalid identification'));
 		}
@@ -41,11 +41,11 @@ class IdentificationsController extends AppController {
 	}
 
 /**
- * add method
+ * admin_add method
  *
  * @return void
  */
-	public function add() {
+	public function admin_add() {
 		if ($this->request->is('post')) {
 			$this->Identification->create();
 			if ($this->Identification->save($this->request->data)) {
@@ -58,13 +58,13 @@ class IdentificationsController extends AppController {
 	}
 
 /**
- * edit method
+ * admin_edit method
  *
  * @throws NotFoundException
  * @param string $id
  * @return void
  */
-	public function edit($id = null) {
+	public function admin_edit($id = null) {
         $this->Identification->id = $id;
 		if (!$this->Identification->exists($id)) {
 			throw new NotFoundException(__('Invalid identification'));
@@ -83,14 +83,14 @@ class IdentificationsController extends AppController {
 	}
 
 /**
- * delete method
+ * admin_delete method
  *
  * @throws NotFoundException
  * @throws MethodNotAllowedException
  * @param string $id
  * @return void
  */
-	public function delete($id = null) {
+	public function admin_delete($id = null) {
 		if (!$this->request->is('post')) {
 			throw new MethodNotAllowedException();
 		}
@@ -104,4 +104,5 @@ class IdentificationsController extends AppController {
 		}
 		$this->Session->setFlash(__('Identification was not deleted'), 'flash/error');
 		$this->redirect(array('action' => 'index'));
-	}}
+	}
+}

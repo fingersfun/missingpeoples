@@ -18,15 +18,16 @@ class PersonFixture extends CakeTestFixture {
  * @var array
  */
 	public $fields = array(
-		'id' => array('type' => 'biginteger', 'null' => false, 'default' => null, 'key' => 'primary'),
+		'id' => array('type' => 'biginteger', 'null' => false, 'default' => null, 'unsigned' => false, 'key' => 'primary'),
 		'name' => array('type' => 'string', 'null' => false, 'default' => null, 'length' => 200, 'collate' => 'latin1_swedish_ci', 'charset' => 'latin1'),
 		'surname' => array('type' => 'string', 'null' => false, 'default' => null, 'length' => 200, 'collate' => 'latin1_swedish_ci', 'charset' => 'latin1'),
 		'dob' => array('type' => 'date', 'null' => false, 'default' => null),
-		'age' => array('type' => 'integer', 'null' => false, 'default' => null),
+		'age' => array('type' => 'integer', 'null' => false, 'default' => null, 'unsigned' => false),
+		'user_id' => array('type' => 'integer', 'null' => false, 'default' => null, 'unsigned' => false),
 		'picture' => array('type' => 'string', 'null' => false, 'default' => null, 'length' => 100, 'collate' => 'latin1_swedish_ci', 'charset' => 'latin1'),
-		'identification_id' => array('type' => 'biginteger', 'null' => false, 'default' => null, 'key' => 'index'),
-		'contact_id' => array('type' => 'integer', 'null' => false, 'default' => null),
-		'missingdetail_id' => array('type' => 'biginteger', 'null' => false, 'default' => null, 'key' => 'index'),
+		'identification_id' => array('type' => 'biginteger', 'null' => false, 'default' => null, 'unsigned' => false, 'key' => 'index'),
+		'contact_id' => array('type' => 'integer', 'null' => false, 'default' => null, 'unsigned' => false),
+		'missingdetail_id' => array('type' => 'biginteger', 'null' => false, 'default' => null, 'unsigned' => false, 'key' => 'index'),
 		'status' => array('type' => 'boolean', 'null' => false, 'default' => '0'),
 		'created' => array('type' => 'datetime', 'null' => false, 'default' => null),
 		'modified' => array('type' => 'datetime', 'null' => false, 'default' => null),
@@ -48,15 +49,16 @@ class PersonFixture extends CakeTestFixture {
 			'id' => '',
 			'name' => 'Lorem ipsum dolor sit amet',
 			'surname' => 'Lorem ipsum dolor sit amet',
-			'dob' => '2014-07-02',
+			'dob' => '2014-07-13',
 			'age' => 1,
+			'user_id' => 1,
 			'picture' => 'Lorem ipsum dolor sit amet',
 			'identification_id' => '',
 			'contact_id' => 1,
 			'missingdetail_id' => '',
 			'status' => 1,
-			'created' => '2014-07-02 02:48:56',
-			'modified' => '2014-07-02 02:48:56'
+			'created' => '2014-07-13 06:56:02',
+			'modified' => '2014-07-13 06:56:02'
 		),
 	);
 

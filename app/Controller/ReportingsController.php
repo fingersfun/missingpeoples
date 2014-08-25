@@ -14,25 +14,62 @@ class ReportingsController extends AppController {
  * @var mixed
  */
 	public $scaffold;
-	public $uses = array('Person','Contact','Identification','Missingdetail');
-	var $components = array('Wizard.Wizard','Session','Paginator');
+	public $uses = array('Person','Contact','Identification','Missingdetail','User');
+	var $components = array('Wizard.Wizard','Session','Paginator','ImageResizer','RequestHandler');
 	
 	public function beforeFilter() 
-	{
+	{	
+	//echo '<pre>';
+	//	print_r($this->params);
+	//echo '</pre>';
+		 parent::beforeFilter();
+        // Allow users to register and logout.
+		$this->Auth->allow('index', 'viewReport');
+		
         $this->Wizard->steps = array('person', 'identification', 'missingdetail','contact');
 		
 		$wizardData = $this->Wizard->read();
 		$this->set(compact('reviewData',$wizardData));
     }
+	
+	public function isAuthorized($user) {
+		// All registered users can add posts
+		if ($this->action === 'add') {
+			return true;
+		}
 
+		// The owner of a post can edit and delete it
+		if (in_array($this->action, array('edit', 'delete'))) {
+			$postId = (int) $this->request->params['pass'][0];
+			if ($this->Post->isOwnedBy($postId, $user['id'])) {
+				return true;
+			}
+		}
+
+		return parent::isAuthorized($user);
+	}
+	
     public function wizard($step = null) 
 	{
         $this->Wizard->process($step);
     }
-	
+	public function admin_wizard($step = null) 
+	{
+        $this->Wizard->process($step);
+    }
 /**
  * [Wizard Process Callbacks]
  */
+	public function _processUser() 
+	{
+        $this->User->set($this->data);
+        if($this->User->validates()) 
+		{
+            return true;
+        }
+        return false;
+    }
+	
     public function _processContact() 
 	{
         $this->Contact->set($this->data);
@@ -120,13 +157,22 @@ class ReportingsController extends AppController {
 	{ 
        $personData = $this->Session->read('Wizard.complete');
 		//print_r($personData);
-		
+		//$userdetails = $personData['user'];
 		$persondetails = $personData['missing'];
 		$identifications = $personData['identification'];
 		$missingdetails = $personData['missingdetail'];
 		$contactdetails = $personData['contact'];
-		
-        
+		/*
+		$userdetails['User']['ip_address'] = $this->RequestHandler->getClientIp();
+		$userdetails['User']['pwd'] = $userdetails['User']['password'];
+		$createddate = date('Y-m-d H:i:s');
+		$userdetails['User']['created'] = $createddate;
+		$userdetails['User']['modified'] = $createddate;
+        if($this->User->save($userdetails))
+		{
+			$userid = $this->User->id;
+		} 
+		*/
 		if($this->Contact->save($contactdetails))
 		{
 			$contactid = $this->Contact->id;
@@ -146,6 +192,7 @@ class ReportingsController extends AppController {
 		$persondetails['Person']['identification_id'] = $identifyid;
 		$persondetails['Person']['contact_id'] = $contactid;
 		$persondetails['Person']['missingdetail_id'] = $missingid;
+		$persondetails['Person']['user_id'] = $this->Session->read('User.id'); //$userid;
 		$persondetails['Person']['created'] = $tday;
 		$persondetails['Person']['modified'] = $tday;
 		$this->Person->save($persondetails);
@@ -165,6 +212,23 @@ class ReportingsController extends AppController {
 		
 	}
 	public function viewReport($id) 
+	{
+		$this->Person->recursive = 1;
+		$this->set('report', $this->Person->findById($id));
+	}
+	public function admin_index() 
+	{
+		$this->Person->recursive = 1;	
+		$this->Paginator->settings = array(
+			'conditions' => array('Person.status' => false),
+			'limit' => 5,
+			'order' => array('Person.id'=>'DESC')
+		);
+		$peoples = $this->Paginator->paginate('Person');
+		$this->set(compact('peoples',$peoples));
+		
+	}
+	public function admin_viewReport($id) 
 	{
 		$this->Person->recursive = 1;
 		$this->set('report', $this->Person->findById($id));

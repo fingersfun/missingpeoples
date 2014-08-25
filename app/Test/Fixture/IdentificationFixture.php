@@ -11,9 +11,9 @@ class IdentificationFixture extends CakeTestFixture {
  * @var array
  */
 	public $fields = array(
-		'id' => array('type' => 'biginteger', 'null' => false, 'default' => null, 'key' => 'primary'),
-		'height' => array('type' => 'float', 'null' => false, 'default' => null, 'length' => '10,2'),
-		'weight' => array('type' => 'float', 'null' => false, 'default' => null, 'length' => '11,2'),
+		'id' => array('type' => 'biginteger', 'null' => false, 'default' => null, 'unsigned' => false, 'key' => 'primary'),
+		'height' => array('type' => 'float', 'null' => false, 'default' => null, 'length' => '10,2', 'unsigned' => false),
+		'weight' => array('type' => 'float', 'null' => false, 'default' => null, 'length' => '11,2', 'unsigned' => false),
 		'colorofeyes' => array('type' => 'string', 'null' => false, 'default' => null, 'length' => 100, 'collate' => 'latin1_swedish_ci', 'charset' => 'latin1'),
 		'colorofheir' => array('type' => 'string', 'null' => false, 'default' => null, 'length' => 100, 'collate' => 'latin1_swedish_ci', 'charset' => 'latin1'),
 		'marks' => array('type' => 'text', 'null' => false, 'default' => null, 'collate' => 'latin1_swedish_ci', 'charset' => 'latin1'),

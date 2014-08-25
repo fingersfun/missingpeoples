@@ -31,6 +31,77 @@ App::uses('Controller', 'Controller');
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
-	public $components = array('DebugKit.Toolbar','Session');
-	public $theme = "Cakestrap";
+	///public $components = array('DebugKit.Toolbar','Session');
+	public $theme = "Missing";
+	/*public $components = array(
+		'DebugKit.Toolbar',
+		'Session',
+	);*/
+	public $components = array(
+		'DebugKit.Toolbar',
+        'Session',
+        'Auth' => array(
+            'loginRedirect' => array(
+                'controller' => 'reportings',
+                'action' => 'index',
+				
+            ),
+            'logoutRedirect' => array(
+                'controller' => 'reportings',
+                'action' => 'index',
+				
+            ),
+			'authorize' => array('Controller'),
+			'authError' => 'Did you really think you are allowed to see that?',
+			'authenticate' => array(
+				'Form' => array(
+					'fields' => array('username' => 'email')
+				)
+			)
+        )
+    );
+
+    /**
+* beforeFilter Method
+* 
+*/
+	//function beforeFilter()
+	//{ 	 
+		
+		//if($this->action != 'index' && $this->action != 'viewReport' && $this->action != 'signup'')
+		//{
+		//	$this->__validateLoginStatus();
+		//}
+	//} 
+	
+	public function beforeFilter() 
+	{
+        $this->Auth->allow('index', 'view');		
+    }
+/**
+* __validateLoginStatus Method
+* 
+*/
+	function __validateLoginStatus(){ 
+        if($this->action != 'login' && $this->action != 'logout'){ 
+            if($this->Session->check('User') == false){ 
+                $this->redirect(array('controller'=>'users','action'=>'login')); 
+                $this->Session->setFlash('<h4>Warning ! </h4> The URL you\'ve followed requires you login.','flash/warning'); 
+            }
+        }		
+    }
+	public function isAuthorized($user) {
+		 // Any registered user can access public functions
+        if (empty($this->request->params['admin'])) {
+            return true;
+        }
+
+        // Only admins can access admin functions
+        if (isset($this->request->params['admin'])) {
+            return (bool)($user['role'] === 'admin');
+        }
+
+        // Default deny
+        return false;
+	}
 }

@@ -15,6 +15,7 @@ class IdentificationTest extends CakeTestCase {
 	public $fixtures = array(
 		'app.identification',
 		'app.person',
+		'app.contact',
 		'app.missingdetail'
 	);
 
